@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/Estilos.css" />
+    <!-- Link de pág de iconos porque no me funcionaba la pág que sugirieron: "https://boxicons.com/usage#import-css" -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" href="img/invader-solid-24.png" type="png" sizes="16px">
+    <!-- Fuente de google -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+    </style>
+    <title>Curriculum Vitae</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+
+        <div>
+          <a href="#" class="nav__logo">Mi CV</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x-circle"></i>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#Home" class="nav__link active">Inicio</a></li>
+            <li class="nav__item"><a href="#About" class="nav__link">Acerca de mí</a></li>
+            <li class="nav__item"><a href="#Works" class="nav__link">Trabajos</a></li>
+            <li class="nav__item"><a href="#Contact" class="nav__link">Contácteme</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-- Home-Inicio -->
+      <section class="Home section" id="Home">
+        <div class="Home__container bd-grid">
+          <div class="Home__data">
+            <div class="Home_img">
+              <img src="img/perfil.jpeg" alt="Acá hay una imagen de inicio">
+            </div>
+            <h1 class="Home__title">CV PERSONAL</h1>
+            <span class="Home__profession">Desarrollador inicial Front-End</span>
+
+            <div class="Home__social">
+              <!-- Reemplazando el numeral en href por un link te lleva a esa página del link -->
+              <a href="#" class="Home__social-link"><i class='bx bx-book-content'></i></a>
+            </div>             
+
+          </div>  
+        </div>
+      </section>
+      
+      <!-- About-Acerca de mi -->
+      <section class="About section" id="About">
+        <span class="section-subtitle">INTRODUCCIóN</span>
+        <h2 class="section-title">ACERCA DE MÍ</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <!-- Proporciono un dato inventado para la descripción -->
+            <p class="about__description"> Me encuentro programando el proyecto final del curso. A ponerle garra hasta el final !!</p>
+            <img src="img/compu" alt="Imagen de una compu" class="about__img">
+          </div> 
+          
+          <div class="about__information">
+            <h3 class="about__information-title">Información personal</h3>
+
+            <div class="about__information-data">
+              <i class='bx bx-user about__information-icon'></i>
+              <span>Mauro Programador</span>
+            </div>
+           
+            <div class="about__information-data">
+              <i class='bx bx-map about__information-icon'></i>
+              <span>Buenos Aires</span>
+            </div>
+          </div>
+
+          <div class="about__information">
+            <h3 class="about__information-title">Experiencia</h3>
+
+            <div class="about__information-data">
+              <i class='bx bx-medal about__information-icon'></i>
+              <div>
+                <span class="about__information-subtitle">Dos meses y medio de curso</span>
+                </div>
+              </div>
+          </div>
+
+          <div class="about__information">
+            <h3 class="about__information-title">Cursos</h3>
+
+            <div class="about__information-data">
+              <i class='bx bxs-graduation about__information-icon'></i>
+              <div>
+                <span class="about__information-subtitle">Ticmas programador Front-End</span>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Works - Trabajos -->
+      <section class="Work section" id="Works">
+        <span class="section-subtitle">MIS TRABAJOS</span>
+        <h2 class="section-title">TRABAJOS</h2>
+
+        <div class="works__container bd-grid">
+          <div class="work__content">
+            <i class='bx bx-cake work__content-icon'></i>
+            <h3 class="work__title">Pastelería</h3>
+            <p class="work__description">..."Cada celebración termina con algo dulce"...</p>
+            <img src="img/budin.jpg" alt="Imagen de un budin casero" class="work__img">
+          </div>
+
+          <div class="work__content">
+            <i class='bx bxs-tree work__content-icon'></i>
+            <h3 class="work__title">Jardinería</h3>
+            <p class="work__description">..."El huerto es vida, planta tu propio jardín y decora tu alma, en lugar de esperar a que alguien te traiga flores"...</p>
+            <img src="img/pinos.jpeg" alt="Imagen de un budin casero" class="work__img">
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact - Contácteme -->
+      <section class="Contact section" id="Contact">
+        <span class="section-subtitle">MEDIOS</span>
+        <h2 class="section-title">CONTÁCTEME</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <div class="contact__imputs">
+              <input type="text" placeholder="Nombre" class="contact__imput">
+              <input type="email" placeholder="E-mail" class="contact__imput">
+            </div>
+
+            <input type="text" placeholder="Proyecto" class="contact__imput">
+            
+            <textarea name="" id="" cols="0" rows="10" placeholder="Mensaje" class="contact__imput"></textarea>
+            
+            <input type="submit" value="Enviar mensaje" class="contact__button">
+
+          </form>
+          
+          <div class="contact__info">
+            <h3 class="contact__subtitle">Llámeme</h3>
+
+            <div class="contact__info-data">
+              <i class='bx bxl-whatsapp about__information-icon' ></i>
+              <div>
+                <span class="contact__text">01139317685</span>
+                </div>
+              </div>           
+          </div>
+
+          <div class="contact__info">
+            <h3 class="contact__subtitle">E-mail</h3>
+
+            <div class="contact__info-data">
+              <i class='bx bx-envelope about__information-icon' ></i>
+              <div>
+                <span class="contact__text">mau.ncls9@hotmail.com</span> 
+                </div>
+              </div>             
+          </div>     
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <h1 class="footer__title">CV de Mauro Di Lisa</h1>
+        <p class="footer__description">Este es el final de esta pág</p>
+        <p class="footer__copy">Todos los derechos reservados - 2023</p>
+      </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/function.js"></script>
+  </body>
+</html>
